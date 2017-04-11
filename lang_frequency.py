@@ -18,11 +18,11 @@ def get_most_frequent_words(text, num_of_words):
 
 
 if __name__ == '__main__':
-    NUM_POPULAR_WORDS = 10
+    num_popular_words = 10
     file_path = input("Select data file:")
     text = load_data(file_path)
     if not text:
         print('File not exists!')
         exit()
     print('The most popular words in the text and their count:')
-    pprint(get_most_frequent_words(text, NUM_POPULAR_WORDS))
+    pprint(get_most_frequent_words(text, num_popular_words))
